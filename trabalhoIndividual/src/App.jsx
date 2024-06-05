@@ -6,6 +6,7 @@ import { ListaDeTimes } from './pages/exercicio1/Times'
 import { Horario } from './pages/exercicio2/Horario'
 import { Formulario } from './pages/exercicio3/Formulario'
 import { BarraDePesquisa } from './pages/exercicio4/BarraDePesquisa'
+import { Cor } from './pages/desafio/MudarACor'
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
 
   return (
     <>
-     <Formulario/>
+     <Cor/>
     </>
   )
 }
