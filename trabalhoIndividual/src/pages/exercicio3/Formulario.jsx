@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { Botao } from "../../components/Button";
-
+import { Botao } from "../../components/Botao/Button";
+import { Input1 } from "../../components/Input/Input";
 export function Formulario(){
     const [novoFormulario, setNovoFormulario] = useState('');
     const [novoNome, setNovoNome] = useState('');
@@ -25,19 +25,19 @@ function adicionarFormulario(){
          }}>
 
         <label>Nome:</label>
-        <input  type="text" 
+        <Input1 type="text" 
         value={novoNome}
-        onChange={(e)=> setNovoNome(e.target.value)}
+        onChange={(e)=>setNovoNome(e.target.value)}
         />
         <br />
         <label>Idade:</label>
-        <input type="number" 
+        <Input1 type="number" 
         value={novaIdade}
         onChange={(e)=> setNovaIdade(e.target.value)}
         />
         <br />
         <label>Email:</label>
-        <input type= "text" 
+        <Input1 type= "text" 
         value={novoEmail}
         onChange={(e)=> setNovoEmail(e.target.value)}
         />
